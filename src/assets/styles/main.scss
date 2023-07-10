@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url(~@/assets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+body {
+    margin: 0;
+	background-color: #FBFBFB;
+
+    h1, h2, h3, h4, h5, h6, p, a, span {
+        font-family: Roboto;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
