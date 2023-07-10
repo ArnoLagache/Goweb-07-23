@@ -1,7 +1,7 @@
 <template>
 	<div class="product-card">		
 		
-		<router-link to="/products" class="back-link no-before">
+		<router-link to="/products" class="back-link">
 			<img src="~@/assets/images/back-arrow.svg">
 		</router-link>		
 		
@@ -42,7 +42,6 @@
 						</div>
 
 						<button @click="persist" :disabled="!price">Update product</button>
-
 					</form>
 				</div>
 
