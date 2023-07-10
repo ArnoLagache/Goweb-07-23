@@ -26,6 +26,7 @@
     export default {
         name: "Menu",
 
+        //Ajout d'un état 'toggleMenu' afin d'ouvrir et fermer le menu en mobile/tablette
         data(){
             return {
                 toggleMenu: false,
