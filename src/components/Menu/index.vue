@@ -3,7 +3,7 @@
 
         <nav :class="{ 'nav-show': toggleMenu }">
 
-            <img alt="Circle Products logo" title="Circle Products" class="logo" src="@/assets/logo.png">
+            <img alt="Circle Products logo" title="Circle Products" class="logo" src="@/assets/images/logo.png">
 
             <ul>
                 <li><a>Dashboard</a></li>
