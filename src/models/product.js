@@ -1,5 +1,6 @@
 const VAT_PERCENT = 0.2;
 
+//Définition de la class Produit
 class Product {
     constructor(id, title, category, price, image, description) {
         this.id = id;
