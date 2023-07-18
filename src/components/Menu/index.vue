@@ -1,40 +1,45 @@
 <template>
-    <div>
+  <div>
+    <nav :class="{ 'nav-show': toggleMenu }">
+      <img
+        alt="Circle Products logo"
+        title="Circle Products"
+        class="logo"
+        src="@/assets/images/logo.png"
+      />
 
-        <nav :class="{ 'nav-show': toggleMenu }">
+      <ul>
+        <li><a>Dashboard</a></li>
+        <li><router-link to="/">Product Management</router-link></li>
+        <li><a>Employees Management</a></li>
+      </ul>
 
-            <img alt="Circle Products logo" title="Circle Products" class="logo" src="@/assets/images/logo.png">
+      <a class="logout">Logout</a>
 
-            <ul>
-                <li><a>Dashboard</a></li>
-                <li><router-link to="/">Product Management</router-link></li>
-                <li><a>Employees Management</a></li>
-            </ul>
+      <button class="close-btn" @click="toggleMenu = !toggleMenu">
+        &#9587;
+      </button>
+    </nav>
 
-            <a class="logout">Logout</a>
-            
-            <button class="close-btn" @click="toggleMenu = !toggleMenu">&#9587;</button>
-            
-        </nav>
-        
-        <button class="open-btn" @click="toggleMenu = !toggleMenu">&#9776;</button>
-
-    </div>
+    <button class="open-btn" @click="toggleMenu = !toggleMenu">&#9776;</button>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "Menu",
+/* eslint-disable */
+export default {
+  /* eslint-disable */
+  name: "Menu",
 
-        //Ajout d'un état 'toggleMenu' afin d'ouvrir et fermer le menu en mobile/tablette
-        data(){
-            return {
-                toggleMenu: false,
-            }
-        }
+  //Ajout d'un état 'toggleMenu' afin d'ouvrir et fermer le menu en mobile/tablette
+  data() {
+    return {
+      toggleMenu: false,
     };
+  },
+};
 </script>
 
 <style lang="scss">
-    @import "menu";
+@import "menu";
 </style>

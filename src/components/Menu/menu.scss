@@ -1,118 +1,118 @@
-nav{
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: calc(-100% - 60px);
+  height: 100%;
+  width: calc(100% - 60px);
+  padding: 30px;
+
+  background-color: #564aff;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  transition: left ease 0.4s;
+
+  @media screen and (min-width: 1024px) {
     position: fixed;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    left: calc(-100% - 60px);
-    height: 100%;
-    width: calc(100% - 60px);
+    left: 0;
+    right: initial;
+    width: 250px;
     padding: 30px;
+  }
 
-    background-color: #564AFF;
-    color: #ffffff;
-    text-align: left;
-    font-weight: bold;
-    transition: left ease .4s;
+  @media screen and (min-width: 1280px) {
+    padding: 50px;
+  }
 
-    @media screen and (min-width: 1024px){
-        position: fixed;
-        left: 0;
-        right: initial;
-        width: 250px;
-        padding: 30px;
-    }
+  .logo {
+    display: block;
+    width: 175px;
+    height: auto;
+    margin: auto;
+  }
 
-    @media screen and (min-width: 1280px){
-        padding: 50px;
-    }      
+  ul {
+    margin: 100px 0 0 0;
+    padding-inline-start: 0;
+    list-style-type: none;
 
-    .logo{
-        display: block;
-        width: 175px;
-        height: auto;
-        margin: auto;
-    }
+    li {
+      position: relative;
+      padding-bottom: 30px;
 
-    ul{
-        margin: 100px 0 0 0;
-        padding-inline-start: 0;
-        list-style-type: none;
-
-        li{
-            position: relative;
-            padding-bottom: 30px;
-
-            a{
-                position: relative;
-                font-size: 16px;
-                text-decoration: none;
-                color: #ffffff;
-                
-                &.router-link-active{
-                    padding-left: 1.5rem;
-
-                    &:before{
-                        content: " ";
-                        position: absolute;
-                        left: 0;
-                        bottom: 3px;                        
-                        width: 0.8rem;
-                        height: 0.8rem;
-                        border-radius: 2rem;
-                        background-color: #ffffff;       
-                    }
-                }
-            }
-
-            &:last-child{
-                border-bottom: 1px solid #ffffff;
-            }
-        }
-    }
-
-    .logout{
-        display: block;
-        padding: 30px 0;
-    }
-
-    .close-btn{
-        position: absolute;
-        z-index: 10;
-        right: 30px;
-        top: 20px;
-        font-size: 20px;
-        font-weight: bold;
+      a {
+        position: relative;
+        font-size: 16px;
+        text-decoration: none;
         color: #ffffff;
-        border: none;
-        background-color: transparent;
 
-        @media screen and (min-width: 1024px){
-            display: none;
-        }        
-    }  
+        &.router-link-active {
+          padding-left: 1.5rem;
 
-    &.nav-show{
-        left: 0;
-        transition: left ease .4s;
-
-        @media screen and (min-width: 1024px) {
-            left: initial;            
+          &:before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: 3px;
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 2rem;
+            background-color: #ffffff;
+          }
         }
-    }
-}
+      }
 
-.open-btn{
+      &:last-child {
+        border-bottom: 1px solid #ffffff;
+      }
+    }
+  }
+
+  .logout {
+    display: block;
+    padding: 30px 0;
+  }
+
+  .close-btn {
     position: absolute;
-    z-index: 5;
-    left: 20px;
-    top: 21px;
-    font-size: 30px;
+    z-index: 10;
+    right: 30px;
+    top: 20px;
+    font-size: 20px;
     font-weight: bold;
-    color: #564AFF;
+    color: #ffffff;
     border: none;
     background-color: transparent;
 
-    @media screen and (min-width: 1024px){
-        display: none;
+    @media screen and (min-width: 1024px) {
+      display: none;
     }
+  }
+
+  &.nav-show {
+    left: 0;
+    transition: left ease 0.4s;
+
+    @media screen and (min-width: 1024px) {
+      left: initial;
+    }
+  }
+}
+
+.open-btn {
+  position: absolute;
+  z-index: 5;
+  left: 20px;
+  top: 21px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #564aff;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }

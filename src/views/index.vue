@@ -1,18 +1,19 @@
 <template>
-    <div>
-        <Menu></Menu>
-        <router-view></router-view>
-    </div>
+  <div>
+    <Menu></Menu>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
 import Menu from "@/components/Menu/";
 
 export default {
-    name: "Index",
-    
-    components: {		
-        Menu		
-    },
+  /* eslint-disable */
+  name: "Index",
+
+  components: {
+    Menu,
+  },
 };
 </script>
