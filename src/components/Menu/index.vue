@@ -9,9 +9,9 @@
       />
 
       <ul>
-        <li><a>Dashboard</a></li>
+        <li><a href="#pathToDashboard">Dashboard</a></li>
         <li><router-link to="/">Product Management</router-link></li>
-        <li><a>Employees Management</a></li>
+        <li><a href="#pathToEmpManagement">Employees Management</a></li>
       </ul>
 
       <a class="logout">Logout</a>

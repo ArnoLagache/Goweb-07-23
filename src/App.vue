@@ -7,6 +7,21 @@
 <script>
 export default {
   name: "App",
+  metaInfo: {
+    title: "Circle Products",
+    titleTemplate: "%s | Back Office",
+    htmlAttrs: {
+      lang: "fr-FR",
+    },
+    meta: [
+      { charset: "utf-8" },
+      {
+        name: "description",
+        content: "Testing an app in Vue.js",
+      },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+    ],
+  },
 };
 </script>
 
